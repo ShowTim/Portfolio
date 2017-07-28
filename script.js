@@ -24,7 +24,7 @@ function buttonOriginal() {
 };
 
 
-function touchToggle () {
+function touchToggle() {
     if (this.className = ""){
         this.className = "hoveredAbility";
     } else {
