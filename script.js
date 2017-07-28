@@ -2,6 +2,7 @@ var htmlButton = document.getElementById("HTML");
 var cssButton = document.getElementById("CSS");
 var jsButton = document.getElementById("JS");
 var jqButton = document.getElementById("JQ");
+var summary = document.getElementById("summary")
 
 
 htmlButton.addEventListener('mouseenter', buttonChange);
@@ -54,13 +55,13 @@ function focusToggle() {
     this.className = "hoveredAbility";
 };
 
-htmlButton.addEventListener('onblur', focusNormal);
-cssButton.addEventListener('onblur', focusNormal);
-jsButton.addEventListener('onblur', focusNormal);
-jqButton.addEventListener('onblur', focusNormal);
+summary.addEventListener('focus', focusNormal);
 
 function focusNormal() {
-    this.className = "";
+    htmlButton.className = "";
+    cssButton.className = "";
+    jsButton.className = "";
+    jqButton.className = "";
 };
 
 
