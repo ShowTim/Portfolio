@@ -23,10 +23,11 @@ function buttonOriginal() {
     this.className = "";
 };
 
-
 function touchToggle() {
-    if (this.className = ""){
-        this.className = "hoveredAbility";
+    if (this.className === ""){
+        this.className === "hoveredAbility";
+    } else {
+        this.className === "";
     }
 };
 
