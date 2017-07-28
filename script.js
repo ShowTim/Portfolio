@@ -35,3 +35,14 @@ htmlButton.addEventListener('touchstart', buttonChange);
 cssButton.addEventListener('touchstart', buttonChange);
 jsButton.addEventListener('touchstart', buttonChange);
 jqButton.addEventListener('touchstart', buttonChange);
+
+htmlButton.addEventListener('touchstart', test);
+cssButton.addEventListener('touchstart', test);
+jsButton.addEventListener('touchstart', test);
+jqButton.addEventListener('touchstart', test);
+
+function test() {
+    if (this.className == "hoveredAbility") {
+        this.className = "";
+    }
+};
