@@ -11,6 +11,10 @@ jqButton.addEventListener('mouseenter', buttonChange);
 
 
 function buttonChange() {
+    htmlButton.className = "";
+    cssButton.className = "";
+    jsButton.className = "";
+    jqButton.className = "";
     this.className = "hoveredAbility";
 };
 
@@ -37,10 +41,10 @@ function toggleTouch() {
 };
 
 
-htmlButton.addEventListener('onfocus', focusToggle);
-cssButton.addEventListener('onfocus', focusToggle);
-jsButton.addEventListener('onfocus', focusToggle);
-jqButton.addEventListener('onfocus', focusToggle);
+htmlButton.addEventListener('focus', focusToggle);
+cssButton.addEventListener('focus', focusToggle);
+jsButton.addEventListener('focus', focusToggle);
+jqButton.addEventListener('focus', focusToggle);
 
 function focusToggle() {
     htmlButton.className = "";
@@ -50,9 +54,14 @@ function focusToggle() {
     this.className = "hoveredAbility";
 };
 
+htmlButton.addEventListener('onblur', focusNormal);
+cssButton.addEventListener('onblur', focusNormal);
+jsButton.addEventListener('onblur', focusNormal);
+jqButton.addEventListener('onblur', focusNormal);
 
-
-
+function focusNormal() {
+    this.className = "";
+};
 
 
 
