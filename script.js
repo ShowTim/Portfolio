@@ -37,6 +37,23 @@ function toggleTouch() {
 };
 
 
+htmlButton.addEventListener('onfocus', focusToggle);
+cssButton.addEventListener('onfocus', focusToggle);
+jsButton.addEventListener('onfocus', focusToggle);
+jqButton.addEventListener('onfocus', focusToggle);
+
+function focusToggle() {
+    htmlButton.className = "";
+    cssButton.className = "";
+    jsButton.className = "";
+    jqButton.className = "";
+    this.className = "hoveredAbility";
+};
+
+
+
+
+
 
 
 
