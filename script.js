@@ -23,12 +23,16 @@ function buttonOriginal() {
     this.className = "";
 };
 
-htmlButton.addEventListener('touchstart', buttonChange);
-cssButton.addEventListener('touchstart', buttonChange);
-jsButton.addEventListener('touchstart', buttonChange);
-jqButton.addEventListener('touchstart', buttonChange);
 
-htmlButton.addEventListener('touchend', buttonOriginal);
-cssButton.addEventListener('touchend', buttonOriginal);
-jsButton.addEventListener('touchend', buttonOriginal);
-jqButton.addEventListener('touchend', buttonOriginal);
+function touchToggle () {
+    if (this.className = ""){
+        this.className = "hoveredAbility";
+    } else {
+        this.className = "";
+    }
+};
+
+htmlButton.addEventListener('touchstart', touchToggle);
+cssButton.addEventListener('touchstart', touchToggle);
+jsButton.addEventListener('touchstart', touchToggle);
+jqButton.addEventListener('touchstart', touchToggle);
