@@ -23,26 +23,20 @@ function buttonOriginal() {
     this.className = "";
 };
 
-function touchToggle() {
+htmlButton.addEventListener('touchstart', toggleTouch);
+cssButton.addEventListener('touchstart', toggleTouch);
+jsButton.addEventListener('touchstart', toggleTouch);
+jqButton.addEventListener('touchstart', toggleTouch);
+
+function toggleTouch() {
     if (this.className === ""){
-        this.className === "hoveredAbility";
-    } else {
-        this.className === "";
-    }
-};
-
-htmlButton.addEventListener('touchstart', buttonChange);
-cssButton.addEventListener('touchstart', buttonChange);
-jsButton.addEventListener('touchstart', buttonChange);
-jqButton.addEventListener('touchstart', buttonChange);
-
-htmlButton.addEventListener('touchstart', test);
-cssButton.addEventListener('touchstart', test);
-jsButton.addEventListener('touchstart', test);
-jqButton.addEventListener('touchstart', test);
-
-function test() {
-    if (this.className == "hoveredAbility") {
+    this.className = "hoveredAbility";}
+    else {
         this.className = "";
     }
 };
+
+
+
+
+
