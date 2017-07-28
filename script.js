@@ -31,7 +31,7 @@ function touchToggle() {
     }
 };
 
-htmlButton.addEventListener('touchstart', touchToggle);
-cssButton.addEventListener('touchstart', touchToggle);
-jsButton.addEventListener('touchstart', touchToggle);
-jqButton.addEventListener('touchstart', touchToggle);
+htmlButton.addEventListener('touchstart', buttonChange);
+cssButton.addEventListener('touchstart', buttonChange);
+jsButton.addEventListener('touchstart', buttonChange);
+jqButton.addEventListener('touchstart', buttonChange);
